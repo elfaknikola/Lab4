@@ -35,7 +35,7 @@ fun StudentNavHost(
                 onAddExamClick = {
                     navController.navigate(Routes.ADD_EXAM)
                 },
-                onStudentNameClick = { student ->
+                onStudentCardClick = { student ->
                     studentViewModel.selectStudent(student)
                     navController.navigate(Routes.STUDENT_DETAILS)
                 }
